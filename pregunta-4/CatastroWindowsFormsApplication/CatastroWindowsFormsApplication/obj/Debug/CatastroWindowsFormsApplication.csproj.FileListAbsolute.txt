@@ -1,0 +1,12 @@
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\bin\Debug\CatastroWindowsFormsApplication.exe.config
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.Form1.resources
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.Properties.Resources.resources
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.csproj.GenerateResource.Cache
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\bin\Debug\CatastroWindowsFormsApplication.exe
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\bin\Debug\CatastroWindowsFormsApplication.pdb
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.exe
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.pdb
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.Form2.resources
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.Form3.resources
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Desktop\INF - 324\Examen-1\pregunta-4\CatastroWindowsFormsApplication\CatastroWindowsFormsApplication\obj\Debug\CatastroWindowsFormsApplication.Form4.resources
