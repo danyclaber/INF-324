@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Persona</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-sm card-form p-4 my-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">Registrar Persona</h5>
+                        <form action="php/insertarPersona.php" method="POST">
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text" id="ci-icon">
+                                    <i class="bi bi-card-text"></i>
+                                </span>
+                                <input type="text" class="form-control" id="ci" name="ci" placeholder="CI" required aria-describedby="ci-icon">
+                            </div>
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text" id="nombres-icon">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" required aria-describedby="nombres-icon">
+                            </div>
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text" id="apaterno-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" id="aPaterno" name="aPaterno" placeholder="Apellido Paterno" required aria-describedby="apaterno-icon">
+                            </div>
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text" id="amaterno-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" id="aMaterno" name="aMaterno" placeholder="Apellido Materno" required aria-describedby="amaterno-icon">
+                            </div>
+
+                            <!-- Selector de Distrito -->
+                            <div class="mb-3">
+                                <label for="distrito" class="form-label">Distrito</label>
+                                <select class="form-select" id="distrito" name="distrito" required onchange="actualizarZonas()">
+                                    <option value="">Seleccionar Distrito</option>
+                                    <option value="distrito1">Distrito 1</option>
+                                    <option value="distrito2">Distrito 2</option>
+                                    <option value="distrito3">Distrito 3</option>
+                                    <option value="distrito4">Distrito 4</option>
+                                    <option value="distrito5">Distrito 5</option>
+                                    <option value="distrito6">Distrito 6</option>
+                                </select>
+                            </div>
+
+                            <!-- Selector de Zona -->
+                            <div class="mb-3">
+                                <label for="zona" class="form-label">Zona</label>
+                                <select class="form-select" id="zona" name="zona" required>
+                                    <option value="">Seleccionar Zona</option>
+                                    <!-- Las opciones se llenarán con JavaScript -->
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 mt-3 py-2">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Función para actualizar las zonas según el distrito seleccionado
+        function actualizarZonas() {
+            const distritoSelect = document.getElementById("distrito");
+            const zonaSelect = document.getElementById("zona");
+            const zonas = {
+                distrito1: [
+                    "Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5",
+                    "Zona 6", "Zona 7", "Zona 8", "Zona 9", "Zona 10"
+                ],
+                distrito2: [
+                    "Zona 11", "Zona 12", "Zona 13", "Zona 14", "Zona 15",
+                    "Zona 16", "Zona 17", "Zona 18", "Zona 19", "Zona 20"
+                ],
+                distrito3: [
+                    "Zona 21", "Zona 22", "Zona 23", "Zona 24", "Zona 25",
+                    "Zona 26", "Zona 27", "Zona 28", "Zona 29", "Zona 30"
+                ],
+                distrito4: [
+                    "Zona 31", "Zona 32", "Zona 33", "Zona 34", "Zona 35",
+                    "Zona 36", "Zona 37", "Zona 38", "Zona 39", "Zona 40"
+                ],
+                distrito5: [
+                    "Zona 41", "Zona 42", "Zona 43", "Zona 44", "Zona 45",
+                    "Zona 46", "Zona 47", "Zona 48", "Zona 49", "Zona 50"
+                ],
+                distrito6: [
+                    "Zona 51", "Zona 52", "Zona 53", "Zona 54", "Zona 55",
+                    "Zona 56", "Zona 57", "Zona 58", "Zona 59", "Zona 60"
+                ]
+            };
+
+
+            const selectedDistrito = distritoSelect.value;
+
+            // Limpiar zonas actuales
+            zonaSelect.innerHTML = '<option value="">Seleccionar Zona</option>';
+
+            if (selectedDistrito in zonas) {
+                zonas[selectedDistrito].forEach(function(zona) {
+                    const option = document.createElement("option");
+                    option.value = zona.toLowerCase().replace(" ", "");
+                    option.textContent = zona;
+                    zonaSelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
