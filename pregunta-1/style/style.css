@@ -1,0 +1,200 @@
+/* =============================
+   Reset de márgenes y padding
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Activa el desplazamiento suave */
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    text-align: justify;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* =============================
+   Estilos para el encabezado
+============================= */
+.fondo-degradado {
+    height: 20vh;
+    background: linear-gradient(to right, #43dae4, #30bacf, #ff9a9e, #f06);
+}
+
+.logo {
+    height: 90px;
+    width: 200px;
+}
+
+.nav-principal {
+    background-color: #f7f1f1;
+}
+
+.nav-link {
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #64e9e9f6;
+    color: #000;
+}
+
+/* =============================
+   Estilos para el slider
+============================= */
+.slider {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =============================
+   Estilos para secciones principales
+============================= */
+main>section {
+    height: auto;
+}
+
+/* =============================
+   Estilos para "Quienes Somos"
+============================= */
+
+
+.p-quienesSomos {
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* =============================
+   Estilos para tarjetas
+============================= */
+.order-card {
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg, #4099ff, #73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg, #FFB64D, #ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg, #FF5370, #ff869a);
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+    border: none;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 4rem;
+}
+
+/* =============================
+   Estilos para sección de contacto
+============================= */
+.contactanos {
+    background-color: rgb(60, 58, 58);
+    color: white;
+}
+
+.li-contactos {
+    list-style: none;
+}
+
+.cont-sp {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* =============================
+   Estilos para el pie de página
+============================= */
+footer {
+    background-color: rgb(33, 31, 31);
+}
+
+.social-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* =============================
+   Estilos para tramites
+============================= */
+
+.tramite-1 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.tramite-detail {
+    border-left: 4px solid #00d5ff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
