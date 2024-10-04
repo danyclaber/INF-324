@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.center-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.btn-color {
+    background-color: #0e2238;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-color:hover {
+    background-color: #184370;
+    transform: scale(1.05);
+    color: #fff;
+}
